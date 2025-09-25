@@ -17,7 +17,7 @@ const Card = ({ticket}) => {
         <p className='font-medium'>{ticket.priority}</p>
     </div>
 
-      <div className='flex text-sm gap-2 text-gray-600'>
+      <div className='flex text-sm gap-3 text-gray-600'>
         <p>{ticket.customer}</p>
         <p> <i className="fa-regular fa-calendar"></i> {ticket.createdAt}</p>
     </div>

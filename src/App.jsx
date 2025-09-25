@@ -3,6 +3,8 @@ import { Suspense } from "react"
 import Banner from "./components/Banner"
 import CardContainer from "./components/CardContainer"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
 
 
 
@@ -24,10 +26,12 @@ function App() {
      <Navbar></Navbar>
 <div className="bg-gray-100">
   <Banner></Banner>
-  <Suspense fallback={"loading..."}>
+  <Suspense fallback={"Loading........"}>
 
     <CardContainer fetchPromise={fetchPromise}></CardContainer>
   </Suspense>
+
+  <Footer></Footer>
 </div>
      
     </>
