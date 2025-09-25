@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Failed - Invalid Credentials",
+    "description": "Customer reports login failing even with correct username and password.",
+    "customer": "Michael Brown",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-10"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Failed - Card Declined",
+    "description": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+    "customer": "Sarah Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-16"
+  },
+  {
+    "id": 1003,
+    "title": "Password Reset Not Working",
+    "description": "User requested password reset but did not receive the reset email.",
+    "customer": "David Miller",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-01-18"
+  },
+  {
+    "id": 1004,
+    "title": "Mobile App Crashes",
+    "description": "The app crashes immediately after launch on Android 12 devices.",
+    "customer": "Emma Davis",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-20"
+  },
+  {
+    "id": 1005,
+    "title": "Email Notifications Not Received",
+    "description": "Customer not receiving daily notification emails since last update.",
+    "customer": "William Anderson",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-22"
+  },
+  {
+    "id": 1006,
+    "title": "Billing Amount Incorrect",
+    "description": "Customer invoice shows wrong total after applying discount coupon.",
+    "customer": "Sophia Lee",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-01-23"
+  },
+  {
+    "id": 1007,
+    "title": "Website Slow",
+    "description": "Homepage loading takes more than 15 seconds.",
+    "customer": "James Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-24"
+  },
+  {
+    "id": 1008,
+    "title": "Feature Request - Dark Mode",
+    "description": "Customer requested a dark mode option in application settings.",
+    "customer": "Olivia Brown",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-01-25"
+  },
+  {
+    "id": 1009,
+    "title": "Account Suspended by Mistake",
+    "description": "User account has been flagged and suspended wrongly by system.",
+    "customer": "Isabella Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2025-01-26"
+  },
+  {
+    "id": 1010,
+    "title": "UI Alignment Issue",
+    "description": "Buttons overlapping on Safari browser in checkout page.",
+    "customer": "Ethan Anderson",
+    "priority": "LOW PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2025-01-27"
+  }
+]
