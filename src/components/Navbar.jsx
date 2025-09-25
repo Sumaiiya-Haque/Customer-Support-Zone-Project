@@ -11,7 +11,7 @@ const Navbar = () => {
                 <h2 className="font-bold text-xl pb-5 sm:pb-0">CS-Ticket System</h2>
             </div>
 
-            <div className="flex flex-wrap sm:flex-row justify-around items-center gap-5 sm:gap-5">
+            <div className="flex flex-wrap sm:flex-row justify-around items-center gap-5 mx-5 sm:mx-0 sm:gap-5">
            <a className='text-sm' href="">Home</a>
            <a className='text-sm' href="">FAQ</a>
            <a className='text-sm' href="">Changelog</a>
