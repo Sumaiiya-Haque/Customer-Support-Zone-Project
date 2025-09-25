@@ -32,7 +32,7 @@
     "description": "The app crashes immediately after launch on Android 12 devices.",
     "customer": "Emma Davis",
     "priority": "HIGH PRIORITY",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2025-01-20"
   },
   {
@@ -77,7 +77,7 @@
     "description": "User account has been flagged and suspended wrongly by system.",
     "customer": "Isabella Martinez",
     "priority": "HIGH PRIORITY",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-01-26"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Buttons overlapping on Safari browser in checkout page.",
     "customer": "Ethan Anderson",
     "priority": "LOW PRIORITY",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2025-01-27"
   }
 ]

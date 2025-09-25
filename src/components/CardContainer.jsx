@@ -17,11 +17,11 @@ const CardContainer = ({ fetchPromise }) => {
                     <div className=' grid grid-cols-1 sm:grid-cols-2 gap-4 mx-5 sm:mx-0'>
                         {/* card  */}
 
-                        {
-                            initialData.map((ticket) => {
-                                // cards
-                                return (
-                                    <Card ticket={ticket}></Card>
+                   {
+                    initialData.map((ticket,index) => {
+                            // cards
+                   return (
+                  <Card key={index} ticket={ticket}></Card>
                                 )
                             })
                         }

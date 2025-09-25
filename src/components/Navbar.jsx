@@ -18,7 +18,7 @@ const Navbar = () => {
            <a className='text-sm' href="">Blog</a>
            <a className='text-sm' href="">Download</a>
           <a className='text-sm' href="">Contact</a>
-           <button className="text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-[10px]"> <i class="fa-light fa-plus"></i> New Ticket</button>
+           <button className="text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-2 py-1 rounded-[5px]"> <i class="fa-light fa-plus"></i> New Ticket</button>
             </div>
 
 
