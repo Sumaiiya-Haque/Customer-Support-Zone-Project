@@ -1,6 +1,10 @@
-import vector1 from '../assets/vector1.png'
 
-const Banner = () => {
+
+
+const Banner = ({countInProgress}) => {
+
+
+
     return (
   <div className='bg-gray-100'>
 
@@ -10,7 +14,7 @@ const Banner = () => {
 
             <div className='min-h-[200px] w-full sm:w-[50%] text-center items-center flex flex-col justify-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-lg'>
 <h1  className="text-xl font-semibold text-white">In-Progress</h1>
-<p className="text-4xl font-bold text-white">0</p>
+<p className="text-5xl font-bold text-white"><span>{countInProgress}</span></p>
            </div>
 
            <div  className='min-h-[200px] w-full sm:w-[50%] text-center items-center flex flex-col justify-center bg-gradient-to-r from-[#54CF68] to-[#00827A] bg-cover bg-center rounded-lg'  
@@ -19,7 +23,7 @@ const Banner = () => {
             {/* <p> style={{ backgroundImage: `url(${vector1})` }}</p> */}
             
             <h1 className="text-xl font-semibold text-white">Resolved</h1>
-            <p className="text-4xl font-bold text-white">0</p>
+            <p className="text-5xl font-bold text-white">0</p>
            </div>
    </div>
         </div>

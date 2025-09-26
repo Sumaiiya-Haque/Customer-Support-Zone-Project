@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import TaskStatus from './TaskStatus';
 import Card from '../components/Card';
 
-const CardContainer = ({ fetchPromise }) => {
+const CardContainer = ({ fetchPromise ,handleInProgress,selectedTasks}) => {
 
     const initialData = use(fetchPromise);
 
@@ -21,7 +21,8 @@ const CardContainer = ({ fetchPromise }) => {
                     initialData.map((ticket,index) => {
                             // cards
                    return (
-                  <Card key={index} ticket={ticket}></Card>
+                  <Card key={index} ticket={ticket}
+                  handleInProgress={handleInProgress}></Card>
                                 )
                             })
                         }
@@ -30,7 +31,7 @@ const CardContainer = ({ fetchPromise }) => {
 
                 </div>
                 {/* right task column */}
-                <TaskStatus></TaskStatus>
+                <TaskStatus selectedTasks={selectedTasks}></TaskStatus>
             </div>
 
         </div>
