@@ -5,7 +5,7 @@ const Navbar = () => {
  
 
     return (
-        <div className="max-w-[1100px] mx-auto">
+        <div className="max-w-[1100px] mx-auto ">
             <div className="flex flex-col sm:flex-row justify-between items-center  my-6">
             <div>
                 <h2 className="font-bold text-xl pb-5 sm:pb-0">CS-Ticket System</h2>

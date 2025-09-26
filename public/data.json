@@ -23,7 +23,7 @@
     "description": "User requested password reset but did not receive the reset email.",
     "customer": "David Miller",
     "priority": "MEDIUM PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-01-18"
   },
   {
@@ -32,7 +32,7 @@
     "description": "The app crashes immediately after launch on Android 12 devices.",
     "customer": "Emma Davis",
     "priority": "HIGH PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-01-20"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Customer invoice shows wrong total after applying discount coupon.",
     "customer": "Sophia Lee",
     "priority": "HIGH PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-01-23"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Buttons overlapping on Safari browser in checkout page.",
     "customer": "Ethan Anderson",
     "priority": "LOW PRIORITY",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2025-01-27"
   }
 ]

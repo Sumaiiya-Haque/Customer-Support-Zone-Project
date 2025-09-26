@@ -5,25 +5,44 @@ import Banner from "./components/Banner"
 import CardContainer from "./components/CardContainer"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import Card from "./components/Card";
+
 
 
 
 
 const fetchData = async ()=>{
   const result=await fetch('/data.json')
-  return result.json()
+  return result.json();
+  
 }
+
 
 
 function App() {
 
     const [countInProgress,setCountInProgress]=useState(0);
     const [selectedTasks,setSelectedTasks]=useState([]);
+    const[tickets,setTickets]=useState([]);
+    const [resolvedTasks,setResolvedTasks]=useState([]);
+
+    
   
-  const handleInProgress =(ticket)=>{
+  const handleInProgress =(clickedTicket)=>{
     setCountInProgress(countInProgress+1);
-    setSelectedTasks(pre=> [...pre,ticket])
+    if(!selectedTasks.find((t)=>t.id === clickedTicket.id)){
+         setSelectedTasks(pre=> [...pre,clickedTicket])
+    setTickets(pre=>pre.map(ticket=>
+      ticket.id===clickedTicket.id ? {...ticket,status:"In-Progress"}:ticket
+    ))
+    }
+ 
+  };
+
+  const handleComplete = (ticket)=>{
+    setTickets(pre=>pre.filter(t=>t.id !== ticket.id))
+   
+    setSelectedTasks((pre)=> pre.filter((t)=>t.id !== ticket.id));
+    setResolvedTasks((pre)=>[...pre,ticket]);
   }
 
   const fetchPromise = fetchData();
@@ -35,12 +54,17 @@ function App() {
 
      <Navbar></Navbar>
 <div className="bg-gray-100">
-  <Banner countInProgress={countInProgress} ></Banner>
+  <Banner countInProgress={selectedTasks.length}
+  countResolved = {resolvedTasks.length} ></Banner>
   <Suspense fallback={"Loading........"}>
 
     <CardContainer fetchPromise={fetchPromise}
     handleInProgress={handleInProgress}
-    selectedTasks={selectedTasks}></CardContainer>
+    selectedTasks={selectedTasks}
+    tickets={tickets}
+    resolvedTasks={resolvedTasks}
+    handleComplete={handleComplete}
+    setTickets={setTickets}></CardContainer>
   </Suspense>
 
   <Footer></Footer>

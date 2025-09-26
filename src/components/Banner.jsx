@@ -1,7 +1,7 @@
 
 
 
-const Banner = ({countInProgress}) => {
+const Banner = ({countInProgress,countResolved}) => {
 
 
 
@@ -23,7 +23,7 @@ const Banner = ({countInProgress}) => {
             {/* <p> style={{ backgroundImage: `url(${vector1})` }}</p> */}
             
             <h1 className="text-xl font-semibold text-white">Resolved</h1>
-            <p className="text-5xl font-bold text-white">0</p>
+            <p className="text-5xl font-bold text-white">{countResolved}</p>
            </div>
    </div>
         </div>
