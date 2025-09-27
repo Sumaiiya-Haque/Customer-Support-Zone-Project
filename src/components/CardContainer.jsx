@@ -5,6 +5,8 @@ import Card from '../components/Card';
 const CardContainer = ({ fetchPromise ,handleInProgress,selectedTasks,resolvedTasks,handleComplete,tickets}) => {
 
     use(fetchPromise);
+    //  use(fetchPromise);
+
     
     // const[tickets,setTickets]=useState(initialData);
     const updateTicket = (ticket)=>{
