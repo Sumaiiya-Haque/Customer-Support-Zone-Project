@@ -12,6 +12,7 @@ import Footer from "./components/Footer"
 
 const fetchData = async ()=>{
   const result=await fetch('/data.json')
+  // const result = await fetch(process.env.PUBLIC_URL + '/data.json');
   return result.json();
   
 }
