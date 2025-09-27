@@ -1,7 +1,7 @@
 [
   {
     "id": 1001,
-    "title": "Login Failed - Invalid Credentials",
+    "title": "Login Failed-Invalid Credentials",
     "description": "Customer reports login failing even with correct username and password.",
     "customer": "Michael Brown",
     "priority": "HIGH PRIORITY",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1002,
-    "title": "Payment Failed - Card Declined",
+    "title": "Payment Failed-Card Declined",
     "description": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
     "customer": "Sarah Johnson",
     "priority": "HIGH PRIORITY",
@@ -64,7 +64,7 @@
   },
   {
     "id": 1008,
-    "title": "Feature Request - Dark Mode",
+    "title": "Feature Request-Dark Mode",
     "description": "Customer requested a dark mode option in application settings.",
     "customer": "Olivia Brown",
     "priority": "LOW PRIORITY",

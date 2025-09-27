@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const Card = ({ticket,handleInProgress}) => {
     return (
-        <div onClick={()=>(toast("In-Progress") , handleInProgress(ticket))} className=' cursor-pointer h-[140px]  rounded-md bg-white px-2 pt-3 pb-5 shadow-lg'>
+        <div onClick={()=>(toast("In-Progress") , handleInProgress(ticket))} className=' cursor-pointer h-fit sm:h-[140px]  rounded-md bg-white px-2 pt-3 pb-5 shadow-lg'>
                    
 
     <div className='flex justify-between items-center'>

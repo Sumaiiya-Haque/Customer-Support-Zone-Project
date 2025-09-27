@@ -1,5 +1,5 @@
 
-import { Suspense, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { ToastContainer} from 'react-toastify';
 import Banner from "./components/Banner"
 import CardContainer from "./components/CardContainer"
@@ -26,6 +26,11 @@ function App() {
     const [resolvedTasks,setResolvedTasks]=useState([]);
 
     
+    useEffect(()=>{
+      fetchData().then((data)=>setTickets(data));
+
+    },[]);
+
   
   const handleInProgress =(clickedTicket)=>{
     setCountInProgress(countInProgress+1);
@@ -39,10 +44,10 @@ function App() {
   };
 
   const handleComplete = (ticket)=>{
-    setTickets(pre=>pre.filter(t=>t.id !== ticket.id))
+    setTickets((pre)=>pre.filter(t=>t.id !== ticket.id))
    
     setSelectedTasks((pre)=> pre.filter((t)=>t.id !== ticket.id));
-    setResolvedTasks((pre)=>[...pre,ticket]);
+    setResolvedTasks((pre)=>[...pre,{...ticket,status:"Resolved"}]);
   }
 
   const fetchPromise = fetchData();

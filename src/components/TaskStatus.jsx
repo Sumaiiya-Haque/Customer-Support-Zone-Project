@@ -13,7 +13,7 @@ const TaskStatus = ({selectedTasks,resolvedTasks,handleComplete}) => {
               selectedTasks.map((task=>(
            <div  key ={task.id} className="max-w-full mx-5  sm:mx-auto  bg-white shadow-lg h-[90px] p-2 rounded-[5px] mb-3 ">
           <h1 className="pb-3 font-semibold">{task.title}</h1>
-    <button onClick={()=>{handleComplete(task),toast("Task Completed")}} className="text-white bg-green-700 w-full py-1 rounded-[5px] ">Complete</button>
+    <button onClick={()=>{handleComplete(task),toast("Task Completed")}} className="text-white bg-green-700 w-full py-1 rounded-[5px] cursor-pointer ">Complete</button>
                             </div>
                            )
                             
@@ -30,9 +30,9 @@ const TaskStatus = ({selectedTasks,resolvedTasks,handleComplete}) => {
                     resolvedTasks.length === 0 ?(
  <p className="text-gray-600 text-center sm:text-left text-sm">No resolved tasks yet.</p> ) : (
     resolvedTasks.map((task)=>(
-        <div  key ={task.id} className="max-w-full mx-5  sm:mx-auto  bg-white shadow-lg h-[90px] p-2 rounded-[5px] mb-3 ">
-                                <h1 className="pb-3 font-semibold">{task.title}</h1>
-    <button onClick={()=>handleComplete(task)} className="text-white bg-green-700 w-full py-1 rounded-[5px] ">Resolved</button>
+        <div  key ={task.id} className="max-w-full mx-5  sm:mx-auto  bg-violet-100 flex justify-center items-center shadow-lg h-[60px]  rounded-[5px] mb-3 ">
+                                <h1 className="pb-3 font-semibold text-center">{task.title}</h1>
+    {/* <button onClick={()=>handleComplete(task)} className="text-white bg-green-700 w-full py-1 rounded-[5px] ">Resolved</button> */}
                             </div>
     ))
  )
